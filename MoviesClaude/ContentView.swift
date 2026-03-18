@@ -26,6 +26,8 @@ struct ContentView: View {
                         MovieDetailView(movie: movie)
                     case .addMovie:
                         AddMovieView(viewModel: viewModel)
+                    case .auth:
+                        AuthView()
                     }
                 }
         }

@@ -21,6 +21,13 @@ struct MoviesView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 EditButton()
             }
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    coordinator.navigate(to: .auth)
+                } label: {
+                    Label("Auth", systemImage: "person.badge.key")
+                }
+            }
             #endif
             ToolbarItem {
                 Button {
